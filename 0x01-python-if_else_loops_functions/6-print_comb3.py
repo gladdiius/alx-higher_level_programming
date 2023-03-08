@@ -2,7 +2,7 @@
 for i in range(9):
     for x in range(10):
         if x > i:
-            print(f"{i}{x}",end="")
+            print("{}{}".format(i,x),end="")
             if i != 8:
                 print(",",end=" ")
 print()
