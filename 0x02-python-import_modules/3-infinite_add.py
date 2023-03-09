@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+__name__="__main__"
 import sys
 arg = sys.argv 
 len = len(arg) -1 
