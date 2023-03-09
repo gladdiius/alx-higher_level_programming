@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-__name__="__main__"
 import sys
+__name__ = "__main__"
 arg = sys.argv 
 sum = 0
 for i in arg:
