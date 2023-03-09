@@ -1,15 +1,14 @@
-#!/bin/python3
+#!/usr/bin/python3
 __name__="main__"
 import sys
-arg = sys.argv #list
-len=len(arg)
+len = len(sys.argv)
 x = 0
 if len == 0:
     print("{} arguments.".format(len))
 elif len == 1:
     print("{}: argument.".format(len))
-    print("{} .".format(arg[0]))
+    print("{} .".format(sys.argv[0]))
 else:
     print("{}: arguments.".format(len))
-    for i in arg:
+    for i in sys.argv:
         print("{}: {}".format(x+1, i))
