@@ -4,5 +4,5 @@ __name__="__main__"
 
 for r in matrix:
     for c in r:
-        print(c,end = " ")
-    print(end=" ")
+        print("{}".format(c),end = " ")
+    print()
