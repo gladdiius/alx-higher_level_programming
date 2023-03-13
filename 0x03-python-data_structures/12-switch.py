@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+__name__ = "__main__"
+
 
 a = 89
 b = 10
