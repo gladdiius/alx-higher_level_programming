@@ -11,6 +11,6 @@ if __name__ == "__main__":
         exit(1)
     else:
         a = int(sys.argv[1])
-        b = int(sys.argv[2])
-        print(f'{a} {sys.argv[2]} {b} = {dict[sys.argv[2]](1, 3)}')
+        b = int(sys.argv[3])
+        print(f'{a} {sys.argv[2]} {b} = {dict[sys.argv[2]](a, b)}')
 
