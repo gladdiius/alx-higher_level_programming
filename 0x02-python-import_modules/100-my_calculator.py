@@ -2,12 +2,7 @@
 if __name__ == "__main__":
     from calculator_1 import add, sub, div, mul
     import sys
-    dict = {
-            "+": add,
-            "-": sub,
-            "*": mul,
-            "/": div
-            }
+    dict = {"+": add, "-": sub, "*": mul, "/": div}
     if (len(sys.argv) - 1) != 3:
         print('Usage: ./100-my_calculator.py <a> <operator> <b>')
         exit(1)
@@ -15,6 +10,7 @@ if __name__ == "__main__":
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
     else:
-        print(f'{sys.argv[1]} {sys.argv[2]}' \
-                f' {sys.argv[3]} = {dict[sys.argv[2]](1, 3)}')
+        a = int(sys.argv[1])
+        b = int(sys.argv[2])
+        print(f'{a} {sys.argv[2]} {b} = {dict[sys.argv[2]](1, 3)}')
 
