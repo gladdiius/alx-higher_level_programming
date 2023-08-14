@@ -12,4 +12,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
             tuple_b += (0, )
 
     return tuple((tuple_a[x] + tuple_b[x] for x in range(2)))
-
