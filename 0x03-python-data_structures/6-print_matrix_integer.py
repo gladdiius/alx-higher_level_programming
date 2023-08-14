@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    x = '\n'.join(["".join(['{:d} '.format(element) for element in row]) for row in matrix])
-    print('{}'.format(x))
+    for row in matrix:
+        for element in row:
+            print("{:d} ".format(element), end = " " if row[-1] != element else "")
+        print()
