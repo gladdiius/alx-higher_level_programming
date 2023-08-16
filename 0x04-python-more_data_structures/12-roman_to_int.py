@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
          'D': 500,
          'M': 1000
          }
-    if (!(isinstance(roman_string, str))
+    if (not (isinstance(roman_string, str)):
             return
     x = 0
     len1 = len(roman_string) - 1
