@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+     if not (isinstance(roman_string, str)):
+            return
     roman = {
          'I': 1,
          'V': 5,
@@ -9,8 +11,6 @@ def roman_to_int(roman_string):
          'D': 500,
          'M': 1000
          }
-    if (not (isinstance(roman_string, str)):
-            return
     x = 0
     len1 = len(roman_string) - 1
     flage = 0
