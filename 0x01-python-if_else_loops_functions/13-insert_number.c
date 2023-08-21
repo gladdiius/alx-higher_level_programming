@@ -21,6 +21,7 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		temp2->next = temp;
 		*head = temp2;
+		return (temp2);
 	}
 
 	else
