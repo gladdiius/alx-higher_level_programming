@@ -4,7 +4,7 @@
 
 class Square:
     """An empty class for Square.
- 
+
         Args:
             size (int): width of square.
     """
