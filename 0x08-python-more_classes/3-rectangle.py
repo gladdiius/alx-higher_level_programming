@@ -52,5 +52,5 @@ class Rectangle:
         return 2 * self.__width + 2 * self.__height
 
     def __str__(self):
-        """ prints informal representaion of rectangle.""""
+        """prints informal representaion of rectangle."""
         return '\n'.join("#" * self.__width for i in range(self.__height))
