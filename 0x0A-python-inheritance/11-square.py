@@ -20,4 +20,3 @@ class Square(Rectangle):
     def __str__(self):
         """prints the area of the rectangle."""
         return f'[{self.__class__.__name__}] {self.__size}/{self.__size}'
-
