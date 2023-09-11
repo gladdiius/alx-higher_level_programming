@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-"""function for defination for lookup"""
+"""Defines an object attribute lookup function."""
 
 
-def MyList(list):
-    """returns the available attributes and methods of an object"""
-
-    def print_sorted(self):
-        """print sorted list."""
-        print(sorted(self))
+def lookup(obj):
+    """Return a list of an object's available attributes."""
+    return (dir(obj))
