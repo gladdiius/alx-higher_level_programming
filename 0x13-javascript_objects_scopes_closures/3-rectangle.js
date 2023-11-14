@@ -7,15 +7,11 @@ class Rectangle {
     }
   }
 
-  print() {
-        if (this.width === 0 || this.height === 0) {
-            console.log("Empty Rectangle");
-        } else {
-            for (let i = 0; i < this.height; i++) {
+  print () {
+	for (let i = 0; i < this.height; i++) {
                 console.log("X".repeat(this.width));
-            }
-        }
-    }
+	}
+  }
 }
 
 module.exports = Rectangle;
