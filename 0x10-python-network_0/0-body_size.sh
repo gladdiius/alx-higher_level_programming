@@ -1,5 +1,3 @@
 #!/bin/bash
-# Use curl to send a request and display the size of the body in bytes
-response_body_size=$('curl -sI "$1" | grep -i Content-Length | awk '{print $2}'')
-echo "$response_body_size"
-
+# This script takes a URL as an argument, sends a request to that URL using curl, and displays the size of the body of the response in bytes
+curl -sI $1 | grep -i Content-Length | awk '{print $2}' | tr -d '\r\n'
